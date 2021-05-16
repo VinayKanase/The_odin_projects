@@ -1,23 +1,22 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
+ <img width=200px height=200px src="https://www.theodinproject.com/assets/odin-logo-2d729f16279e9fc3b58ce847eacf07f883bdfc95eb23bb5064ed59d36ef551d6.svg" alt="Project logo"></a>
 </p>
 
-<h3 align="center">Project Title</h3>
+<h3 align="center">The Odin Project</h3>
 
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
+[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/VinayKanase/The_odin_projects/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/VinayKanase/The_odin_projects/pulls)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 </div>
 
 ---
 
-<p align="center"> Few lines describing your project.
-    <br> 
+<p align="center"> Most of us would know about The Odin Project I am also Working on it.They tell you practice some of the projects so I will be listing all projects here<br>
 </p>
 
 ## 📝 Table of Contents
@@ -34,81 +33,49 @@
 
 ## 🧐 About <a name = "about"></a>
 
-Write about 1-2 paragraphs describing the purpose of your project.
-
+My Goal is to become a great Web Developer and so to strengthen my skills I need to Learn and Practice it.
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them.
-
+What things you need to install the software and how to install them.<br>
+ - Downloaded git on your system 
 ```
-Give examples
+git init
 ```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running.
-
-Say what the step will be
+To install run clone the below repository 
 
 ```
-Give the example
+git clone git@github.com:VinayKanase/The_odin_projects.git
 ```
 
-And repeat
 
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo.
-
-## 🔧 Running the tests <a name = "tests"></a>
-
-Explain how to run the automated tests for this system.
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
+Don't directly copy code from this try to learn by practice,Because Your Skills will develop as you keeep Practicing
 
 ## 🎈 Usage <a name="usage"></a>
 
-Add notes about how to use the system.
-
-## 🚀 Deployment <a name = "deployment"></a>
-
-Add additional notes about how to deploy this on a live system.
+Every project of odin's project is divided into sub directories under this is repository
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
+- [HTML](https://www.google.com/search?q=HTML) - Structure Language
+- [CSS](https://www.google.com/search?q=CSS) - Style Language
+- [JAVASCRIPT](https://vuejs.org/) - Scripting Language
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
-
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
+- [@vinaykanse](https://github.com/VinayKanase) - Alone Work
+See also the list of [contributors](https://github.com/VinayKanase/The_odin_projects/graphs/contributors) who participated in this project.
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
-- Hat tip to anyone whose code was used
 - Inspiration
+  - [The Odin Project](https://www.theodinproject.com/)
 - References
+  - [The Odin Project](https://www.theodinproject.com/)
+
