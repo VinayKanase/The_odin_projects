@@ -23,12 +23,9 @@
 
 - [About](#about)
 - [Getting Started](#getting_started)
-- [Deployment](#deployment)
 - [Usage](#usage)
 - [Built Using](#built_using)
-- [TODO](../TODO.md)
 - [Contributing](../CONTRIBUTING.md)
-- [Authors](#authors)
 - [Acknowledgments](#acknowledgement)
 
 ## 🧐 About <a name = "about"></a>
@@ -69,7 +66,7 @@ Every project of odin's project is divided into sub directories under this is re
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [@vinaykanse](https://github.com/VinayKanase) - Alone Work
+- [@vinaykanse](https://github.com/VinayKanase) - Alone Work<br>
 See also the list of [contributors](https://github.com/VinayKanase/The_odin_projects/graphs/contributors) who participated in this project.
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
