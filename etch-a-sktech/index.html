@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex flex-center flex-coloum main-cont">
+        <h1>Etch-A-Sketch</h1>
+    <div class="flex container">
+        <div class="options flex flex-coloum">
+           <div class="flex flex-center btn-cont">
+               <input type="color" value="#FFFFFF">
+            Brush Color
+           </div>
+           <div class="flex flex-center btn-cont">
+               <input type="color" value="#000000">
+               Background Color
+           </div>
+            <button>Eraser</button>
+            <button class="active">Rainbow Pen</button>
+            <button>Shading Pen</button>
+            <div class="btn-cont flex flex-coloum">
+                <label for="pixelSize">Pixel Size: 16 x 16</label>
+                <input id="pixelSize" type="range"min="1" max="64" value="16">
+            </div>
+            <div class="btn-cont flex flex-center check">
+                <input type="checkbox">
+                Grid Lines
+            </div>
+            <button>Clear</button>
+        </div>
+        <div class="float">
+            <div class="wrapper">
+                <div class="cursor"></div>
+                <!-- Custom Cursor for sketch -->
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

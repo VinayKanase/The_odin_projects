@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 3;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: "Poppins",sans-serif;
+    font-size: 1.6rem;
+}
+.flex{
+    display: flex;
+}
+.flex-center{
+    align-items: center;
+}
+.flex-coloum{
+    flex-direction: column;
+}
+.main-cont{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url("https://tse2.mm.bing.net/th?id=OIP.oEQLwgDusll2Dt07_4cLYwHaHZ&pid=Api&P=0&w=300&h=300");
+}
+.main-cont::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(-45deg,rgb(9, 23, 70),purple,blue);
+    opacity: 0.9;
+    z-index: 1;
+}
+.container{
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+.options{
+    width: 26%;
+    background: linear-gradient(-45deg,rgb(9, 23, 70),blue); 
+    height: 550px;
+    padding: 40px 50px;
+    border-radius: 15px;
+    margin-top: 80px;
+    margin-left: calc(auto - 30px);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.options button{
+    padding: 10px 20px;
+    width: 80%;
+    font-family: "Poppins",sans-serif;
+    font-size: 1.4rem;
+    background: rgba(0, 0, 0, 0.35);
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+}
+.options button.active{
+    border: 2px solid yellow;
+    box-shadow: 0 0 4px 3px rgba(221, 217, 7, 0.5),inset 0 0 8px 6px rgba(221, 217, 7, 0.5);
+}
+.float{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    margin-top: 80px;
+    background: lightblue;
+    width: 560px;
+    height: 560px;
+    border: 20px solid grey;
+    border-top-color: rgba(0, 0, 0, 0.85);
+    border-right-color: rgba(0, 0, 0, 0.85);
+    cursor: none;
+    position: relative;
+}
+.cursor{
+    width: 20px;
+    height: 20px;
+    background: black;
+    position: absolute;
+}
+input[type="color"]{
+    width: 50px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.btn-cont{
+    justify-content: space-evenly;
+    width: 90%;
+}
+input[type="checkbox"]{
+    width: 25px;
+}
+.check{
+    width: 50%;
+}
