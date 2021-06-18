@@ -70,6 +70,11 @@ body{
     border: none;
     outline: none;
     border-radius: 12px;
+    margin: 10px 0;
+    transition: 0.5s;
+}
+.options button:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.36),rgba(0,0,0,0.5));
 }
 .options button.active{
     border: 2px solid yellow;
@@ -83,20 +88,31 @@ body{
 }
 .wrapper{
     margin-top: 80px;
-    background: lightblue;
+    background: white;
     width: 560px;
     height: 560px;
     border: 20px solid grey;
     border-top-color: rgba(0, 0, 0, 0.85);
     border-right-color: rgba(0, 0, 0, 0.85);
     cursor: none;
-    position: relative;
+    display: grid;
+    grid-template-columns: repeat(16,1fr);
+    grid-template-rows: repeat(16,1fr);
+}
+.wrapper.grid div{
+    border: 1px solid black;
 }
 .cursor{
-    width: 20px;
-    height: 20px;
-    background: black;
     position: absolute;
+    z-index: 20;
+    cursor: none;
+}
+.cursor i {
+    cursor: none;
+}
+.hide{
+ opacity: 0;
+ pointer-events: none;
 }
 input[type="color"]{
     width: 50px;
@@ -115,4 +131,65 @@ input[type="checkbox"]{
 }
 .check{
     width: 50%;
+}
+.gg-pen {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: rotate(-45deg) scale(var(--ggs,1));
+    width: 20px;
+    height: 6px;
+    border-right: 2px solid transparent;
+    box-shadow:
+        0 0 0 2px,
+        inset -2px 0 0;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    margin-right: -2px;
+}
+.gg-pen::after,
+.gg-pen::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+}
+.gg-pen::before {
+    background: currentColor;
+    border-left: 0;
+    right: -8px;
+    width: 4px;
+    height: 6px;
+    border-radius: 1px;
+    top: 0;
+}
+.gg-pen::after {
+    width: 10px;
+    height: 10px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-right: 7px solid;
+    left: -14px;
+    top: -2px;
+}
+.gg-pen.rainbow::before{
+    color: rgb(214, 99, 214);
+}
+.gg-pen.gg-pen.rainbow::after{
+    color: red;
+}
+.gg-pen.shading::before,.gg-pen.shading::after{
+    color: rgb(77, 72, 72);
+}
+.gg-square {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 12px;
+    height: 12px;
+    border-radius: 1px;
+    border: 3px solid transparent;
+    box-shadow: 0 0 0 3px,
+    inset 0 0 0 3px
 }

@@ -6,37 +6,40 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-A-Sketch</title>
+    <link rel="shortcut icon" href="https://www.theodinproject.com/assets/odin-logo-2d729f16279e9fc3b58ce847eacf07f883bdfc95eb23bb5064ed59d36ef551d6.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="hide cursor">
+        <i class="gg-pen"></i>
+    </div>
     <div class="flex flex-center flex-coloum main-cont">
         <h1>Etch-A-Sketch</h1>
     <div class="flex container">
         <div class="options flex flex-coloum">
            <div class="flex flex-center btn-cont">
-               <input type="color" value="#FFFFFF">
+               <input class="brushColor" type="color" value="#000000">
             Brush Color
            </div>
            <div class="flex flex-center btn-cont">
-               <input type="color" value="#000000">
+               <input class="bgColor" type="color" value="#FFFFFF">
                Background Color
            </div>
-            <button>Eraser</button>
-            <button class="active">Rainbow Pen</button>
-            <button>Shading Pen</button>
+            <button class="eraser">Eraser</button>
+            <button class="rainbowPen" class="active">Rainbow Pen</button>
+            <button class="shadingPen">Shading Pen</button>
             <div class="btn-cont flex flex-coloum">
-                <label for="pixelSize">Pixel Size: 16 x 16</label>
-                <input id="pixelSize" type="range"min="1" max="64" value="16">
+                <label class="pixelheading">Pixel Size: <span>16 x 16</span></label>
+                <input class="pixelSize" type="range"min="1" max="64" value="16">
             </div>
             <div class="btn-cont flex flex-center check">
-                <input type="checkbox">
+                <input class="gridLines" type="checkbox" >
                 Grid Lines
             </div>
-            <button>Clear</button>
+            <button class="clear">Clear</button>
         </div>
         <div class="float">
             <div class="wrapper">
-                <div class="cursor"></div>
                 <!-- Custom Cursor for sketch -->
             </div>
         </div>
