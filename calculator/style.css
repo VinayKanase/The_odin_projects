@@ -8,12 +8,17 @@ html{
 }
 body{
     font-size: 1.6rem;
+    position: relative;
     font-family: sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: #091929;
+}
+::selection{
+    background: white;
+    color: black;
 }
 body::before,body::after{
     content: '';
@@ -79,10 +84,17 @@ body::after{
     font-size: 24px;
     font-weight: 500;
 }
-.container .calculator .clear{
+.container .calculator .doublespace{
   grid-column: span 2;
   width: 160px;
 }
 .calculator .equal{
     background: rgba(255, 255, 255, 0.05);
+    transition: 0.5s;
+}
+.calculator .equal:hover{
+    background: none;
+}
+.fa,img{
+    pointer-events: none;
 }

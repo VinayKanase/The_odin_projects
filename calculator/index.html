@@ -5,33 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <div class="calculator" name="calculator">
             <input type="text" name="display" id="display" readonly value="0">
-            <span class="clear" data-key="46">C</span>
-            <span>+/-</span>
-            <span data-key="8">x</span>
-            <span data-key="55/103">7</span>
-            <span data-key="56/104">8</span>
-            <span data-key="57/105">9</span>
-            <span data-key="191/111">/</span>
-            <span data-key="52/100">4</span>
-            <span data-key="53/101">5</span>
-            <span data-key="54/102">6</span>
-            <span data-key="106">*</span>
-            <span data-key="49/97">1</span>
-            <span data-key="50/98">2</span>
-            <span data-key="51/99">3</span>
-            <span data-key="107">+</span>
-            <span class="clear" data-key="48/96">0</span>
-            <span data-key="190/110">00</span>
-            <span data-key="189/109">-</span>
-            <span data-key="190/110">.</span>
-            <span style="all:initial"></span>
-            <span class="equal clear" data-key="13">=</span>
+            <span class="doublespace clear" data-key="46">C</span>
+            <!-- <i class="fa fa-times-rectangle-o"></i> -->
+            <span class="cut doublespace" data-key="8"><img width="30px" height="20px" src="./img/cut.png"></span>
+            <span class="number" data-key="55/103">7</span>
+            <span class="number" data-key="56/104">8</span>
+            <span class="number" data-key="57/105">9</span>
+            <span class="operator" data-key="191/111">/</span>
+            <span class="number" data-key="52/100">4</span>
+            <span class="number" data-key="53/101">5</span>
+            <span class="number" data-key="54/102">6</span>
+            <span class="operator" data-key="106">x</span>
+            <span class="number" data-key="49/97">1</span>
+            <span class="number" data-key="50/98">2</span>
+            <span class="number" data-key="51/99">3</span>
+            <span class="operator" data-key="107">+</span>
+            <span class="doublespace number" data-key="48/96">0</span>
+            <span class="number" data-key="190/110">00</span>
+            <span class="operator" data-key="189/109">-</span>
+            <span class="point" data-key="190/110">.</span>
+            <span class="power"><i class="fa fa-superscript"></i></span>
+            <span class="equal doublespace" data-key="13">=</span>
         </div>
     </div>
     <script src="calculator.js"></script>
