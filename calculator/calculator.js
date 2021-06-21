@@ -108,12 +108,12 @@ function findAns(){
      } 
 }
 document.querySelector("body").addEventListener("keydown",(e)=>{
-console.log(e.key);
-let element = document.querySelector(`[data-key='${e.key}']`);
-console.log(element);
-setTimeout(() => {
-    element.classList.toggle("hover");
-}, 350);
-element.classList.toggle("hover");
-if(element) element.click();
+    let element = document.querySelector(`[data-key='${e.key}']`);
+    if(element) {
+        setTimeout(() => {
+            element.classList.toggle("hover");
+        }, 350);
+        element.classList.toggle("hover");    
+        element.click();
+    }
 });
