@@ -84,6 +84,12 @@ body::after{
     font-size: 24px;
     font-weight: 500;
 }
+.calculator span.hover{
+    transition: 0s;
+    background: rgba(255, 255, 255, 0.05);
+    font-size: 24px;
+    font-weight: 500;
+}
 .container .calculator .doublespace{
   grid-column: span 2;
   width: 160px;
