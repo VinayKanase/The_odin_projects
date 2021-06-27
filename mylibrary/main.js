@@ -292,12 +292,14 @@ function saveAllToLocalStorage(){
 function checkForLocalData(){
     if(checkLocalStorageAvailability('localStorage')){
         let temp = JSON.parse(localStorage.getItem("myLibrary"));
-        temp.forEach((book)=>{
-            let BOOK = new Book(book.bookName,book.author,book.isCompleted,book.id);
-            new BookInDOM(BOOK);
-            myLibrary.push(BOOK);
-        });
-        updateToDOM();
+        if(temp != null){
+            temp.forEach((book)=>{
+                let BOOK = new Book(book.bookName,book.author,book.isCompleted,book.id);
+                new BookInDOM(BOOK);
+                myLibrary.push(BOOK);
+            });
+            updateToDOM();
+        }
 
     }
     else{
