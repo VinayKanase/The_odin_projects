@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Library,My Books">
+    <title>My Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <div class="bg"></div>
+<div class="heading">
+    <h1>My Library</h1>
+</div>
+<section class="main">
+    <div class="bookshelf">
+        <input type="search"id="search" placeholder="Search For Books">
+        <div class="books">
+            <div class="book">
+                <div class="bookdetails">
+                    <h2>Book Name</h2>
+                    <div class="complete-author">
+                        <p id="complete">Not Completed</p>
+                        <diiv>~ <span id="author">Author</span></diiv>
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <button id="edit" class="btn btn-primary">Edit</button>
+                    <button id="remove" class="btn btn-danger">Remove</button>
+                    <button class="btn btn-primary">Mark as Completed</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <aside class="details">
+        <ul>
+            <li>Total Books: <span id="total">0</span></li>
+            <li>Completed Books: <span id="completed">0</span></li>
+            <li>Not Completed Books: <span id="incomplete">0</span></li>
+        </ul>
+
+        <div class="btn-cont">
+            <button class="btn btn-primary" id="newBook">Add New Book</button>
+        <button class="btn btn-danger" id="deleteall">Delete All Books</button>
+        </div>
+        <footer>
+            <a href="#">Check for Version 2</a>
+        </footer>
+    </aside>
+</section>
+
+<div id="formModal">
+    <div class="form-container">    
+        <h3 style="text-transform: capitalize;">Add New Book</h3>
+        <div class="errors errors-inactive">
+            <ul>
+            </ul>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="bookName">Title</label>
+                <input type="text" id="bookName" autocomplete="off" placeholder="Title of Book" title="Title of Book" required>
+            </div>
+            <div class="form-group">
+                <label for="author">Author</label>
+                <input type="text" id="authorName" autocomplete="off" placeholder="Author of Book" title="Author of Book" required>
+            </div>
+            <div class="form-group">
+                <label for="isCompleted">Completed Reading</label>
+                <select id="isCompleted">
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                </select>
+            </div>
+        </form>
+        <div class="btns">
+            <button class="btn btn-danger" id="cancel">Cancel</button>
+            <button class="btn btn-primary" id="addNewBook">Add</button>
+    
+        </div>
+                            </div>
+</div>
+</body>
+</html>
