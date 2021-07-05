@@ -1,0 +1,231 @@
+*::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input {
+  outline: none;
+  border: none;
+  font-size: 1.6rem;
+}
+input::placeholder {
+  color: #524f4f;
+  pointer-events: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+::selection {
+  background: black;
+  color: white;
+  padding: 0 30px;
+}
+
+section, header {
+  display: block;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  background: #38c0c7;
+  color: #271F00;
+  font-size: 1.6rem;
+}
+
+section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.gameBoard {
+  width: 500px;
+  height: 500px;
+}
+.gameBoard div {
+  text-transform: uppercase;
+  font-size: 6rem;
+  transition: all 0.4s;
+}
+.gameBoard div::selection {
+  background: transparent;
+  color: #271F00;
+}
+.gameBoard div:hover {
+  transition: none;
+  background: rgba(0, 0, 0, 0.05);
+}
+@media screen and (max-width: 800px) {
+  .gameBoard {
+    width: 80%;
+    margin: 0 auto;
+    height: 80%;
+  }
+}
+
+.blur {
+  filter: blur(3px);
+  pointer-events: none;
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 54%;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+
+.font-md {
+  font-size: 4rem;
+}
+.font-lg {
+  font-size: 5rem;
+}
+.font-bold {
+  font-weight: bold;
+}
+
+.brd-nrml-yellow, .grid.grid-repeat-1fr {
+  border: 2px solid rgba(224, 224, 154, 0.596);
+}
+
+.grid {
+  display: grid;
+}
+.grid.grid-repeat-1fr {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.heading {
+  text-shadow: 2px 5px 20px #3879C7, 3px 5px 10px white, 3px 6px 6px rgba(0, 0, 0, 0.5);
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.margin-coloum-lg {
+  margin: 50px 0;
+}
+@media screen and (max-width: 800px) {
+  .margin-coloum-lg {
+    margin: 20px 0;
+  }
+}
+
+.flex {
+  display: flex;
+}
+.flex-justify-spbtw {
+  justify-content: space-between;
+}
+.flex-dir-row {
+  flex-direction: row;
+}
+@media screen and (max-width: 800px) {
+  .flex-dir-row {
+    flex-direction: column;
+  }
+}
+
+.padding-md {
+  padding: 10px 20px;
+}
+.padding-row-lg {
+  padding: 0 30px;
+}
+.padding-coloum-lg {
+  padding: 30px 0;
+}
+
+.c-pointer {
+  cursor: pointer;
+}
+
+.btn {
+  padding: 10px 30px;
+  font-size: 1.8rem;
+  border-radius: 8px;
+  transition: all 0.5s;
+}
+.btn-third {
+  background: #3879C7;
+  transition: all 0.5s;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15), 0px 0px 20px rgba(0, 0, 0, 0.1), 0px 0px 30px rgba(0, 0, 0, 0.05), inset 0px 0px 10px rgba(0, 0, 0, 0.15), inset 0px 0px 20px rgba(0, 0, 0, 0.1), inset 0px 0px 30px rgba(0, 0, 0, 0.05);
+}
+.btn-third:hover {
+  letter-spacing: 5px;
+  line-height: 35px;
+}
+@media screen and (max-width: 800px) {
+  .btn-third {
+    margin-top: 20px;
+  }
+}
+
+.display-none {
+  display: none;
+}
+
+.off {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.on {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.options {
+  min-width: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.options label {
+  margin: 0 20px;
+}
+
+.boxStyle, .input1 {
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(39, 31, 0, 0.2), inset 0 0 10px rgba(39, 31, 0, 0.2);
+}
+.boxStyle:hover, .input1:hover {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 12px rgba(39, 31, 0, 0.26), inset 0 0 15px rgba(39, 31, 0, 0.24);
+}
+
+.input1 {
+  font-size: 1.65rem;
+}
+@media screen and (max-width: 800px) {
+  .input1 {
+    width: 50%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,17 @@
+
+$bgColor : #FFFFFF;
+$textColor : #662626;
+$thirdColor : #B34242;
+$mobile : 800px;
+$tablet : "";
+html{
+    font-size: 62.5%; //1rem = 10px
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+    font-family: sans-serif;
+    background: $bgColor;
+    color: $textColor;
+    font-size: 1.6rem;
+}

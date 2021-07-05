@@ -1,0 +1,146 @@
+/*
+    Revising SCSS
+*/
+@import "./stylesheets/config"; //use of @import to import scss from othe file
+//variable
+$scssvariable : red;//Eg
+// mixin are kind of functions
+// @mixin flex { This was normal mixin
+//     display: flex;
+// }
+
+@mixin flex-custom($justify,$align,$direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+header{
+    background: green;
+    //this is how we include mixin both are same 
+    @include flex-custom(center, center, row);
+    // @include flex-custom($justify: center,$align: center,$direction: row);
+    //etc properties
+}
+
+.container .heading{
+    //think if want all properties of header same to this one
+    // use @extend
+    @extend header;
+    
+    //calculations with scss
+    width: 100% - 20%;
+} 
+
+
+a{
+    text-decoration: none;
+    //we can use & for current parent class or name or id
+    &:hover{//And for hover and other pseudo classes
+        text-decoration: underline;
+    }
+}
+
+//examples of if else 
+
+@mixin bgColor($bgcolor) {
+    @if $bgcolor == black  {
+        color: white;
+    } @else if $bgcolor == white {
+        color: black;
+    } @else {
+        @error "Unknow Direction #{$direction}";
+    }
+}
+
+// map
+$font-weights : (
+    "lighter" : 200,
+    "regular" : 400,
+    "bold" : 800
+);
+
+
+//use of map
+
+.h1{
+    font-weight: map-get($font-weights, bold );
+}
+//below is just a example
+// think we have two classes btn and btn-primary so one inside other 
+
+.btn{
+    //btn properties
+    color: white;
+    &-primary{ //Think of it has we get selector has (.btn-primary) only
+        //btn-primary properties
+        color: blueviolet;
+    }
+
+    #{&}-primary{ //Think of it has we get selector has (.btn .btn-primary) with .btn as parent class and .btn-primary has child class
+        // btn btn-primary properties
+        color: blue;
+        &:hover{ //and in any selector properties section is selector itself
+            color: rgba(0, 0, 255, 0.336);
+        }
+    }
+}
+
+// @function
+@function weights($weight){
+    @return map-get($font-weights, $weight );
+}
+
+.h1{
+    //font-weight: map-get($font-weights, bold );//this is can be easily changed
+    font-weight: weights(bold);
+
+}
+// lighten(color, percent) and darken(color, percent); 
+// lighten lights the color 
+// darken darks the color
+
+// Now lets see mixin with responsive 
+$mobile : 800px;
+@mixin mobile {
+    @media (max-width: $mobile) {
+        @content;
+    }
+}
+
+.container{
+    //properties 
+    width: 80%;
+    margin: 0 auto;
+    h1{
+        font-size: 2rem;
+    }
+    .card{
+        height: 400px;
+        width: 200px;
+    }
+
+    @include mobile{
+        //  think of this as as media query with max-width of 800px
+        width: 90%;
+    };
+}
+
+.para1{
+    font-size: 24px;
+    color: black;
+}
+.para2{
+    @extend .para1;// uses all properties of para1 for para2
+    color: grey; // overrites color property for para2
+}
+
+//function example for setting text color depending upon entered color
+@function get-text-color($color){
+    @if (lightness($color) > 40%){
+        @return #000;
+    } @else{
+        @return #fff;
+    }
+}

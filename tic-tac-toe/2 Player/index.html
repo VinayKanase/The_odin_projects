@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="keywords" content="Game,Tic Tac Toe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="shortcut icon" href="https://www.theodinproject.com/assets/odin-logo-2d729f16279e9fc3b58ce847eacf07f883bdfc95eb23bb5064ed59d36ef551d6.svg" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section id="start">
+      <header>
+        <h1 class="text-center font-lg heading">Tic Tac Toe</h1>
+      </header>
+      <div class="name-entry flex flexCenter margin-coloum-lg flex-dir-row">
+          <div class="flexCenter margin-coloum-lg padding-md">
+            <label for="palyerName"><h2>What is Player1 name?</h2></label>
+          <input class="padding-md input1" type="text" id="player1Name" placeholder="Player 1 Name">
+          </div>
+          <div class="flexCenter margin-coloum-lg padding-row-lg">
+            <label for="palyerName"><h2>What is Player2 name?</h2></label>
+          <input class="padding-md input1" type="text" id="player2Name" placeholder="Player 2 Name">
+          </div>
+      </div>
+      <div class="text-center">
+          <button id="play" class="btn btn-third c-pointer">Play</button>
+      </div>
+    </section>
+    <section class="off"  id="gamePlayground">
+      <div class="textdetails text-center font-md font-bold">
+        <p id="messageText">This is Tic tac toe</p>
+      </div>
+      <div class="flexCenter">
+        <div style="font-family: Indie Flower;" class="gameBoard grid grid-repeat-1fr">
+          <div data-position="11" class="brd-nrml-yellow font-lg font-bold text-center flexCenter">X</div>
+          <div data-position="12" class="brd-nrml-yellow font-lg font-bold text-center flexCenter">o</div>
+          <div data-position="13" class="brd-nrml-yellow font-lg font-bold text-center flexCenter">x</div>
+          <div data-position="21" class="brd-nrml-yellow font-lg font-bold text-center flexCenter">O</div>
+          <div data-position="22" class="brd-nrml-yellow font-lg font-bold text-center flexCenter">X</div>
+          <div data-position="23" class="brd-nrml-yellow font-lg font-bold text-center flexCenter">o</div>
+          <div data-position="31" class="brd-nrml-yellow font-lg font-bold text-center flexCenter">X</div>
+          <div data-position="32" class="brd-nrml-yellow font-lg font-bold text-center flexCenter">o</div>
+          <div data-position="33" class="brd-nrml-yellow font-lg font-bold text-center flexCenter">X</div>
+        </div>
+        <div class="resetBtn padding-coloum-lg off">
+          <button class="btn btn-third c-pointer">Play Again</button>
+        </div>
+      </div>
+    </section>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="https://www.theodinproject.com/assets/odin-logo-2d729f16279e9fc3b58ce847eacf07f883bdfc95eb23bb5064ed59d36ef551d6.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body >
+    <header class=" padding-row-lg">
+        <h1>Tic Tac Toe</h1>
+        <!-- Music, Game Pause -->
+        <nav class="nav-container">
+            <div class="hamburger"></div>
+            <ul>
+                <li class="padding-md">
+                    <i title="How to Play Info" class="fa fa-info"></i>
+                </li>
+                <li class="padding-md">
+                    <i title="Light Mode/Dark Mode" class="fa fa-moon-o"></i>
+                </li>
+            </ul>  
+        </nav>
+    </header>
+    <section class="display-none">
+        <!-- Player 1 VS Computer will be default  -->
+       <div class="playersList">
+            <input type="text" class="option c-notAllowed" readonly value="Player 1">
+            <span class="font-md font-bold"><i>VS</i></span>
+            <select class="option c-pointer" name="Player 2">
+                <option value="Select One Opponent">---Select One Opponent---</option>
+                <option value="Computer">Computer</option>
+                <option value="Player 2">Player 2</option>
+            </select>
+       </div>
+       <div class="end">
+        <div class="errorMessage">
+            Hello World
+        </div>
+        <button class="btn btn-third" id="Start">Start Game</button>
+       </div>
+    </section>
+    <section class="display-none">
+        <div class="wrapper">
+            <div class="left">
+                <h1 class="font-md" id="message">Let's Play Tic Tac Toe</h1>
+                <button class="btn btn-reset">Restart Game</button>
+            </div>
+
+            <div class="playGround grid grid-repeat-1fr" >
+                <div class="border-nrml">X</div>
+                <div class="border-nrml">O</div>
+                <div class="border-nrml">X</div>
+                <div class="border-nrml">O</div>
+                <div class="border-nrml"></div>
+                <div class="border-nrml"></div>
+                <div class="border-nrml"></div>
+                <div class="border-nrml"></div>
+                <div class="border-nrml"></div>
+            </div>
+        </div>
+    </section>
+    <section class="display-none">
+        <div class="text-center rules">
+            <h1>How To Play Tic Tac Toe</h1>
+            <ol>
+                <li>Player 1 has mark X</li>
+                <li>Player 2/Computer has mark O</li>
+                <li>We have to mark in given boxes one by one</li>
+                <li>Whoever Completes three of his marks in continues order Wins</li>
+                <li>Not Understand Yet? <a target="_blank" href="#">See more</a></li>
+            </ol>
+        </div>
+    </section>
+</body>
+</html>
