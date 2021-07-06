@@ -41,6 +41,9 @@ html{
         border: 2px solid brown;
     }
 }
+.dark .border-nrml{
+    border: 2px solid white;
+}
 
 //grid
 .grid{
@@ -148,18 +151,18 @@ html{
     color: $bgColor;
 }
 header{
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     @include flex-custom(space-between,center,row);
 }
 .nav-container{
-    width: 20%;
     @include flex-custom(center,center,row)
 }
 .nav-container ul{
-    width: 80%;
     @include flex-custom(space-evenly, center, row);
 }
 .nav-container ul li{
+    margin: 0 10px;
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.5s;
@@ -209,15 +212,25 @@ header{
     @extend .padding-coloum-lg;
 }
 .wrapper{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 100px 0;
+    @include flex-custom(space-between,center,row);
+    margin: 100px auto;
+    width: 90%;
+    @include mobile{
+        @include flex-custom(space-between,center,column);
+    }
+}
+.left {
+    @include mobile{
+        margin: 80px 0;
+    }
 }
 .playGround{
     width: 500px;
     height: 500px;
     border: 1px solid black;
+}
+.dark .playGround{
+    border: 1px solid white;
 }
 .playGround div{
     font-size: 5rem;

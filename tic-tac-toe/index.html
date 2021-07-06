@@ -16,34 +16,33 @@
         <nav class="nav-container">
             <div class="hamburger"></div>
             <ul>
-                <li class="padding-md">
+                <li id="info" class="padding-md">
                     <i title="How to Play Info" class="fa fa-info"></i>
                 </li>
-                <li class="padding-md">
+                <li id="mode" class="padding-md">
                     <i title="Light Mode/Dark Mode" class="fa fa-moon-o"></i>
                 </li>
             </ul>  
         </nav>
     </header>
-    <section class="display-none">
+    <section>
         <!-- Player 1 VS Computer will be default  -->
        <div class="playersList">
             <input type="text" class="option c-notAllowed" readonly value="Player 1">
             <span class="font-md font-bold"><i>VS</i></span>
-            <select class="option c-pointer" name="Player 2">
+            <select id="opponent" class="option c-pointer" name="Player 2">
                 <option value="Select One Opponent">---Select One Opponent---</option>
-                <option value="Computer">Computer</option>
-                <option value="Player 2">Player 2</option>
+                <option value="computer">Computer</option>
+                <option value="player 2">Player 2</option>
             </select>
        </div>
        <div class="end">
         <div class="errorMessage">
-            Hello World
         </div>
         <button class="btn btn-third" id="Start">Start Game</button>
        </div>
     </section>
-    <section class="display-none">
+    <section  class="display-none">
         <div class="wrapper">
             <div class="left">
                 <h1 class="font-md" id="message">Let's Play Tic Tac Toe</h1>
@@ -51,15 +50,15 @@
             </div>
 
             <div class="playGround grid grid-repeat-1fr" >
-                <div class="border-nrml">X</div>
-                <div class="border-nrml">O</div>
-                <div class="border-nrml">X</div>
-                <div class="border-nrml">O</div>
-                <div class="border-nrml"></div>
-                <div class="border-nrml"></div>
-                <div class="border-nrml"></div>
-                <div class="border-nrml"></div>
-                <div class="border-nrml"></div>
+                <div data-position="00" class="border-nrml">X</div>
+                <div data-position="01" class="border-nrml">O</div>
+                <div data-position="02" class="border-nrml">X</div>
+                <div data-position="10" class="border-nrml">O</div>
+                <div data-position="11" class="border-nrml"></div>
+                <div data-position="12" class="border-nrml"></div>
+                <div data-position="20" class="border-nrml"></div>
+                <div data-position="21" class="border-nrml"></div>
+                <div data-position="22" class="border-nrml"></div>
             </div>
         </div>
     </section>
@@ -75,5 +74,6 @@
             </ol>
         </div>
     </section>
+    <script src="js/main.js"></script>
 </body>
 </html>
