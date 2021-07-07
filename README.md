@@ -62,7 +62,7 @@ Every project of odin's project is divided into sub directories under this is re
 
 - [HTML](https://www.google.com/search?q=HTML) - Structure Language
 - [CSS](https://www.google.com/search?q=CSS) - Style Language
-- [JAVASCRIPT](https://vuejs.org/) - Scripting Language
+- [JAVASCRIPT](https://www.google.com/search?q=Javascript) - Scripting Language
 
 ## ✍️ Authors <a name = "authors"></a>
 
