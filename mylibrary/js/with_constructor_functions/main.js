@@ -1,18 +1,4 @@
 var myLibrary = [];
-/*
-    {author: "J. K. Rowling",
-    bookName: "Harry Potter Philosopher's Stone",
-    isCompleted: true},
-    {author: "J. K. Rowling",
-    bookName: "Harry Potter Chamber of Secrets",
-    isCompleted: false},
-    {author: "A. P. J. Kalam",
-    bookName: "Wings of Fire",
-    isCompleted: true},
-    {author: "A. P. J. Kalam",
-    bookName: "Turning Points",
-    isCompleted: false}
-*/
 var setid = 0;
 checkForLocalData();
 /**
