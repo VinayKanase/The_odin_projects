@@ -40,7 +40,7 @@ function AddDataToDOM({city,country,description,temprature,feels_like,humidity,w
     document.getElementById('temprature').textContent = temprature;
     document.querySelector('.icon').innerHTML = `<i class="wi wi-${icon}"></i>`;
     document.getElementById('feels_like').textContent = Math.round(feels_like * (100)) / 100  + ' °C'; 
-    document.getElementById('humidity').textContent = Math.round(humidity * (100)) / 100 + ' °C';
+    document.getElementById('humidity').textContent = Math.round(humidity * (100)) / 100 + ' %';
     document.getElementById('wind_speed').textContent = Math.round(windSpeed * (100)) / 100 + ' m/s';
 
 }
