@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./stylesheet/weather-icons.css">
+    <link rel="stylesheet" href="./stylesheet/style.css">
+    <link rel="shortcut icon" href="../odin.svg" type="image/x-icon">
+</head>
+<body>
+    <div class="form">
+        <form id="search">
+            <label for="search">
+                <input type="text" name="search" placeholder="Search for Different Place ">
+                <button id="searchBtn"><i class="search"></i></button>
+            </label>
+            <div class="error"></div>
+        </form>
+    </div>
+    <div class="contentWrapper">
+        <div class="page display-none">
+            <div class="icon">
+            </div>
+            <div class="details">
+                <div class="degree"><div id="temprature"></div> °C <i class="line"></i> <span id="changeUnit">°F</span></div>
+                <div id="loc" class="location"></div>
+                <div class="weatherDescription"></div>
+            </div>
+        </div>
+        <div class="right display-none">
+            <div class="feels_like">
+                <div class="icon">
+                    <i class="wi wi-thermometer"></i>
+                </div>
+                <div class="temp">
+                    <div class="heading">Feels Like</div>
+                    <span id="feels_like"></span>
+                </div>
+            </div>
+            <div class="humidity">
+                <div class="icon">
+                    <i class="wi wi-humidity"></i>
+                </div>
+                <div class="temp">
+                    <div class="heading">Humidity</div>
+                    <span id="humidity"></span>
+                </div>
+            </div>
+            <div class="wind">
+                <div class="icon">
+                    <i class="wi wi-strong-wind"></i>
+                </div>
+                <div class="temp">
+                    <div class="heading">Wind Speed</div>
+                    <span id="wind_speed"></span>
+                </div>
+            </div>
+        </div>
+        <div class="loader"></div>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>
