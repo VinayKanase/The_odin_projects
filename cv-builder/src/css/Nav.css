@@ -1,0 +1,32 @@
+.nav {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--nav-color);
+  color: white;
+}
+.nav__heading {
+  font-family: "Pacifico", sans-serif;
+  font-size: 4rem;
+  padding-left: 20px;
+}
+.nav__list {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  list-style-type: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.nav__list li {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.nav__list li:hover {
+  background-color: white;
+  color: var(--nav-color);
+}
